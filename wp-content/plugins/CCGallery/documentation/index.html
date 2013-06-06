@@ -1,0 +1,401 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en-GB">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>CCGallery Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		h4 { font-weight: bold;}
+		pre { background: #f8f8f8; border: 1px solid #e1e1e1; padding: 20px; }
+	</style>
+
+</head>
+
+
+<body>
+	<div class="container">
+
+		<h3 class="center alt">&ldquo;CCGallery WP&rdquo; Documentation by &ldquo;Nilok Bose&rdquo; v2.1.1</h3>
+
+		<hr>
+
+		<h1 class="center">&ldquo;CCGallery WP&rdquo;</h1>
+
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 21/05/2011<br>
+					By: Nilok Bose<br>
+					Email: <a href="mailto:cosmocoder@gmail.com">cosmocoder@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->
+
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my item. If you have any questions that are beyond the scope of this help
+				file, please feel free to email via my user page contact form <a href="http://codecanyon.net/user/cosmocoder">here</a>. Thanks so much!
+				</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<hr>
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#install">Installing the Plugin</a></li>
+			<li><a href="#howto">How to Use</a></li>
+			<li><a href="#embed">Embed Galleries</a></li>
+		</ol>
+
+		<hr>
+
+
+
+		<h3 id="intro"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+
+		<p>CCGallery WP makes it easy to embed the <a href="http://codecanyon.net/item/ccgallery-html5-multimedia-gallery/233741">CCGallery HTML5 Multimedia
+		   Gallery</a>, available at Codecanyon, in your Wordpress theme. It displays all your images, audio files and video files in a sleek and attractive
+		   interface. You get to browse the items in Coverflow mode or in a Thumbnail grid mode. You can easily switch between the two display modes and can
+		   even filter the items by displaying only images, or audio files, or video files. Filtering of items by custom categories is also supported. Also
+		   CCGallery incorporates a responsive design so that the gallery display fits in various screen sizes ranging from mobile phones to desktop browsers.
+		   The gallery features full touch-screen support which is noted especially in the Coverflow mode. CCGallery has been designed in such a way that it is
+		   extremely easy to browse through a large number of items and also with enough eye candy! CCGallery WP allows you to create multiple galleries where
+		   each gallery can have as many items as you want. Although CCGallery WP allows you to create multiple galleries you can only embed one gallery per
+		   post/page.
+		</p>
+
+
+		<p>Please note that as of <strong>version 2.0</strong> CCGallery utilises CSS 3D Transforms in browsers that support this feature to produce the Coverflow mode. 
+		   This results in smooth animation which is especially noticeable in mobile devices such as iPhone/iPad. Currently CSS 3D Transforms are supported in Firefox 12.0+,
+		   Chrome 20.0+, Safari 5.1+, iOS 3.2+, Android 3.0+. If the browser does not support 3D Transforms then the gallery will use HTML5 Canvas for the Coverflow effect. 
+		   Currently browsers that support Canvas include Firefox 3.0+, Safari 3.0+, Chrome 3.0+, Opera 9.5+ and IE9+. Internet Explorer 6, 7 and 8 do not support Canvas. 
+		   Browsers which do not support Canvas will see a fallback animated effect when browsing files in the Coverflow mode. Hence visitors to your web page using old 
+		   browsers will still see a nicely working gallery. The Thumbnail mode works in almost all browsers.
+		</p>
+
+
+		<hr>
+
+
+		<h3 id="install"><strong>B) Installing the plugin</strong> - <a href="#toc">top</a></h3>
+
+		<p>To install the plugin follow the steps below: </p>
+
+		<ol>
+			<li>Log in to the Wordpress admin panel.</li>
+			<li>Head over to Plugins section and click on the &ldquo;Add New&rdquo; button</li>
+			<li>Then click &ldquo;Upload&rdquo; to bring up the plugin upload dialog. Select the plugin file and upload it. Alternatively you could also
+				unpack the plugin zip file in your computer and then upload it to <strong>/wp-content/plugins</strong> via FTP.</li>
+			<li>Next go to the Plugins main area and you will see <strong>CCGallery WP</strong> being listed as one of the available plugins.</li>
+			<li>Click the &ldquo;Activate&rdquo; button next to it and you are done.</li>
+		</ol>
+
+		<p>Please note that when CCGallery WP is installed then it creates a folder called <strong>ccgallery-upload</strong> in <strong>/wp-content/uploads</strong>. So
+		   please ensure that this folder has correct permissions set. If you receive an error about the upload folder not being created then open
+		   /wp-content/uploads folder via FTP and set its permission to 777.
+		</p>
+		
+		<p>If you are upgrading from an earlier version then first deactivate the plugin. Then upload the new plugin files into /wp-content/plugins and overwrite the old files
+		   and after that activate the plugin. All your previously created galleries will remain intact. Some of the new options that have been introduced in the current
+		   version will have default values as required by the plugin. This will ensure that your previously created galleries keep on working. However it is best recommended
+		   that you check all your galleries and see if they are working as you want. You can also tweak the values of the new options in the Settings page to your liking for
+		   a particular gallery. If by any chance you find that the fields for the new option parameters in the gallery settings page are empty after updating the plugin,
+		   then deactivate the plugin, logout of WP Dashboard, login again and then activate the plugin. After that the new option parameters will have the default values in all
+		   your saved galleries.
+		</p>
+
+
+		<hr>
+
+
+
+		<h3 id="howto"><strong>C) How to Use</strong> - <a href="#toc">top</a></h3>
+
+		<p>After activating the plugin you will see that a new menu item has been created on the left called <strong>CCGallery</strong>. This menu item has two
+		   sub menus - <strong>Gallery Manager</strong> and <strong>Create New Gallery</strong>. These names are self explanatory and whenever you want to
+		   create a new gallery you will head over to the <strong>Create New Gallery</strong> page, and all your existing galleries will be listed in the
+		   <strong>Gallery Manager</strong> page, from where you can edit or delete galleries.
+		</p>
+
+		<p>So first of all to create a new gallery head over to the appropriate page and you will be presented with a list of options. They are described
+			below:
+		</p>
+
+		<h4>Gallery name</h4>
+
+		<p>You must provide a name to the gallery that you are going to create. This is a required field and you will receive an error if you leave it
+			empty. Although different galleries can have the same name but it is advisable that you provide unique names so that it is helpful for
+			you to quickly differentiate between galleries.
+		</p>
+
+		<hr>
+
+		<h4>Gallery description</h4>
+
+		<p>You can write a description for the gallery here. This field is optional.</p>
+
+		<hr>
+
+
+		<h4>Gallery Options</h4>
+
+		<p>A list of options that are applicable to the gallery. Their functions are described as follows:</p>
+
+		<ul>
+			<li><strong>Colour Scheme</strong> - Two colour schemes are available. Choose one from the available list.</li>
+
+			<li><strong>Starting mode</strong> - Choose whether the Coverflow or the Thumbnails mode will be shown when the page first loads.</li>
+
+			<li><strong>Fade edges</strong> - By default the edges of the coverflow images section are faded out. You can disable this if you want, which has the advantage
+			that you can place the gallery in a container with an image or gradient background. If this option is enabled then the gallery can only be placed in a container with a solid colour background.</li>
+
+			<li><strong>Coverflow Background</strong> - Mention the colour value (in hex or rgb) that will be used as the background for the coverflow. This is required
+			to set up the faded effect at the edges. By default the background colour of the body element is used. Please note that if this field is left empty and also
+			your body element has no background colour defined then a default colour of black will be used.
+			</li>
+
+			<li><strong>Coverflow Start Item</strong> - You can mention the number of the item that will be highlighted in the Coverflow when the page first loads. If this is empty then the
+			middle-most item will be highlighted.</li>
+			
+			<li><strong>Disable Reflection in Coverflow</strong> - You can choose to disable the reflection of the coverflow images.</li>
+			
+			<li><strong>Open Links in New Windows</strong> - You can choose to open the links associated with gallery thumbnails in a new window/tab instead of the same window/tab
+			as the gallery (which is the default option).
+			</li>
+
+			<li><strong>Detect Mobile Devices</strong> - You have the option of detecting mobile devices and serving them low resolution videos, which you can upload below.</li>
+
+			<li><strong>Autoplay Video and Audio</strong> - Enable this to start playing video/audio files automatically when the media player shows up. This setting will also affect Youtube/Vimeo videos.</li>
+
+			<li><strong>Play in a Loop</strong> - Enable this option to play video/audio files continuously in a loop. This setting will not affect Youtube/Vimeo videos.</li>
+			
+			<li><strong>Store Volume Level</strong> - Enable this option to retain the volume level of the player when it is closed and volume will be set to that level when the player
+				is opened again. This setting will not affect Youtube/Vimeo videos.
+			</li>
+
+			<li><strong>Custom Categories</strong> - Enter a comma separated list of custom category names that will be displayed in the filter menu bar at the top in the gallery.</li>
+
+			<li><strong>Show File Type Buttons</strong> - Enable this option to show file type buttons (photo, audio, video) in the filter menu. If you have custom categories then you may not need to show these buttons.</li>
+			
+			<li><strong>Hide Gallery Menu</strong> - You can choose to hide the gallery menu completely.</li>
+
+			<li><strong>Starting Category</strong> - Choose the starting category whose items will be shown when the page first loads.</li>
+			
+			<li><strong>Coverflow Mode Image Size</strong> - Set the width and height (in px) of the images used in the Coverflow section.</li>
+			
+			<li><strong>Thumbnails Mode Image Size</strong> - Set the width and height (in px) of the images used in the Thumbnails section. If your uploaded image is such that
+			it cannot be scaled and cropped to the entered size then you will see that, that item in the thumbnail grid has a different size than the other items. In this case you either have to upload
+			a different image or edit the gallery css file and edit the dimensions of <code>#thumbgallery li</code> and <code>#thumbgallery img</code> according to your required size.
+			</li>
+			
+			<li><strong>Hide Coverflow Mode</strong> - If you don't want the Coverflow mode then you can enable this. Please note that for this to take effect you will also
+			have to set the starting mode to Thumbnails. When this is enabled then the View mode buttons in the gallery menu bar will also be hidden.
+			</li>
+			
+			<li><strong>Hide Thumbnails Mode</strong> - If you only want the Coverflow mode then you can enable this to hide the Thumbnails section. On enabling this the View mode
+			buttons in the gallery menu bar will also be hidden. Please take care to have the Starting mode as Coverflow (which is the default option) in order for this to take effect.
+			</li>
+			
+			<li><strong>Hide Coverflow Item List</strong> - If you only want the images in the Coverflow section but not the list that appears below the images then you can enable this to
+			hide that list.
+			</li>
+		</ul>
+
+
+
+		<hr>
+
+		<h4>Gallery Items</h4>
+
+		<p>Here you can create the items that will be displayed in the gallery. The items that you create can also be sorted into any order you want by dragging them. The configuration options for the items are described below. </p>
+
+		<ul>
+			<li><strong>File Type</strong> - Choose the file type of the item, i.e. whether it is a photo, audio or video.</li>
+
+			<li><strong>Category</strong> - Enter a comma separated list of category names to which this item belongs. The list of category names entered here should be present in the list of custom categories entered earlier.</li>
+
+			<li><strong>Image file</strong> - Upload an image file which should be used to generate the images for the Coverflow and Thumbnails mode. Also if the file type is photo then this image file will also be displayed in the Lightbox.</li>
+
+			<li><strong>Audio Files</strong> - If your file type is audio then you will be given the option to upload mp3 and ogg formats of your audio file. If you only upload the mp3 format then in browsers that don't support it natively,
+			like Firefox, Flash will be used to play that file.</li>
+
+			<li><strong>Video Files</strong> - If your file type is video then you will be given the option to upload the mp4, webm and ogv formats of your video file. If you chose to detect mobile devices then you are given the option to upload
+			a low resolution mp4 video file specifically for mobile devices. If you only upload a mp4 file then Flash will be used to play it in browsers that don't support it natively.</li>
+
+			<li><strong>Youtube Video</strong> - If you chose video file type then you can enter a Youtube video link instead of uploading files. The link should be of the form <strong>http://www.youtube.com/watch?v=xxxxxxxxxxx</strong>.
+			Any other form of the link won't work.</li>
+
+			<li><strong>Vimeo Video</strong> - If you chose video file type then you can enter a Vimeo video link instead of uploading files. The link should be of the form <strong>http://vimeo.com/12345678</strong>. Any other form of the link won't work.</li>
+
+			<li><strong>Title</strong> - Enter the title for the gallery item, which will be displayed in the Coverflow and Thumbnail modes and also in the Lightbox.</li>
+
+			<li><strong>Caption</strong> - Here you can write a short description of the gallery item. This field can contain any html code. It will be displayed in the Coverflow and Thumbnail modes and also in the Lightbox, but if it is too long then it
+			will get cut off in the Coverflow and Thumbnail modes, but will be displayed fully in the Lightbox.</li>
+
+			<li><strong>Link</strong> - If you would like the thumbnails of the gallery items (both in Coverflow and Thumbnail modes) to act as links to external pages then you can enter the url of that link here.</li>
+		</ul>
+
+		<hr>
+
+
+		<p>Whenever you want to create a new gallery then the form on that page will be filled out with default option values, so that you only have to create the
+		   gallery items in order to make your gallery work. You can just change the settings that you want to customise and save the gallery
+		   settings. Needless to say, whenever you are going to edit an existing gallery, the same page will open and all the form fields will be filled out
+		   with the settings with which you created the gallery.
+		</p>
+
+
+		<p>If you want to delete an uploaded file then just clear out the text field for that file and save your settings and the file will be deleted.
+		   When you upload a file then it is uploaded immediately to your server but in order to make the plugin remember the file you have to save the settings.
+		   On the other hand the file is deleted only if you clear the text field and then save the settings. When you delete an entire gallery from the gallery manager
+		   page then all the files associated with that particular gallery will also be deleted.
+		</p>
+
+		<h4>Multimedia files</h4>
+
+		<p>As already stated CCGallery supports images, audio and video. In case of images if the dimensions of the large version of the image is bigger than the browser window dimensions
+		   then that image will be resized to fit inside the browser window. For playing audio and video CCGallery uses <a href="http://mediaelementjs.com/">Mediaelement.js</a>. This is a
+		   HTML5 audio and video player. For browsers that do not support HTML5 audio or video playback, Mediaelement.js enables fallback to Flash and Silverlight. Now different browsers
+		   require different file formats for native playback of HTML5 audio and video. For audio you must upload a mp3 version of the file which is supported by Safari, Chrome and IE9.
+		   You must upload an ogg version if you want to have native playback in Firefox and Opera. The ogg format is also supported by Chrome. But you can upload only the mp3 version and
+		   Mediaelement.js will use Flash to play the audio file in Firefox and Opera. Similarly for the case of video playback, if you want to have a wide range of browsers natively play
+		   the video, then you must upload mp4, webm and ogv versions of the video. But here also you can only upload a mp4 version (h.264) and Mediaelement.js will use Flash or Silverlight
+		   to play the video in browsers that do not support that format. If you use only mp4 (h.264) videos and find that when there is Flash fallback in unsupported browsers, the entire
+		   video needs to be downloaded before it can be watched, then the index of the mp4 file is placed at the end. To remedy this case use the utility <a href="http://renaun.com/blog/code/qtindexswapper/">QTIndexSwapper</a>
+		   on your mp4 files. If you find that after uploading CCGallery to your server your browser is not able to play video files then you may need to configure your server in order to
+		   enable it to stream video files. For an Apache server place the following code in an .htaccess file and place it at the root of your website.
+		</p>
+
+<pre class="prettyprint">
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
+</pre>
+
+
+		<h4>Keyboard Shortcuts</h4>
+
+		<p>CCGallery also provides some handy keyboard shortcuts to facilitate easier browsing. Most of these shortcuts are however effective only in the Coverflow mode.
+		   When in the Coverflow mode you can press <strong>LEFT</strong> and <strong>RIGHT</strong> keys to flip through the images. This also of course highlights the appropriate item in the
+		   list below the images. When a particular item is highlighted you can then press <strong>ENTER</strong> to open the modal overlay box. In order to close the overlay you can then press
+		   <strong>ESC</strong>. Note that this last shortcut also works when the overlay is opened from the Thumbnails section. Also if the thumbnails are made to behave as links then on pressing
+		   <strong>ENTER</strong>, when an item is highlighted, will load the page pointed to in the link url.
+		</p>
+
+
+		<h4>PHP Upload Settings</h4>
+
+		<p>CCGallery allows to upload files of sizes upto 100MB. But your server configuration most probably won't allow large sized file uploads by default and in most cases the deafult upload size limit is
+		   set at 2MB. In order to upload large sized files you have to edit your php.ini file (contact your hosting provider if you can't find it) and change the values for the following two rules:
+		</p>
+
+<pre class="prettyprint">
+post_max_size = 100M
+upload_max_filesize = 100M
+</pre>
+
+		<p>Here we have set the maximum upload file size to be 100MB. But uploading large files also requires sufficient memory and you have to set an appropriate memory limit for PHP to use. For most
+		   regular sized file uploads you can edit the following rule in php.ini
+		</p>
+
+<pre class="prettyprint">
+memory_limit = 64M
+</pre>
+
+		<p>Also uploading large files require time and most users won't have super-fast internet connections, so you also have to set the input time for php scripts to an appropriate value. In the following example
+		   we are changing the input time to be 30 minutes.
+		</p>
+
+<pre class="prettyprint">
+max_input_time = 1800
+</pre>
+
+		<p>In the above example we have entered time in seconds. Sometimes you may also need to change the execution time of the php scripts which is affected by the rule called <strong>max_execution_time</strong>
+		   where also the time is entered is seconds. If you are unsure about editing your php.ini file or have no idea what it is then it is best to contact your hosting provider.
+		</p>
+
+
+		<h4>Responsive Design</h4>
+
+		<p>CCGallery features a responsive design and thus can adapt itself to be viewed in desktop browsers as well as in mobile devices. As of <strong>version 2.0</strong>
+		   CCGallery features a fluid design and will therefore also change its width if you place it in any container of a particular width. The default width of the gallery
+		   (<code>div#ccgallery</code>) is 1000px, which changes as the browser viewport width changes or if the parent container has a smaller width, and has a minimum value
+		   of 372px. To have the best effect for the responsive design the gallery should be in a page all by itself and as a body (root) level element, meaning that it should
+		   not be placed inside any container. That way the responsive design of the gallery will function fully when the browser width changes. You can see this effect by
+		   opening the demo of the gallery in Codecanyon in your browser and resizing its width.
+		</p>
+
+
+
+		<hr>
+
+
+		<h3 id="embed"><strong>D) Embed galleries</strong> - <a href="#toc">top</a></h3>
+
+		<p>All the galleries that you create will be visible in the Gallery Manager page. When you go to that page you will see that each gallery has a
+		   field in the table titled <strong>shortcode</strong>. In this field you will see the shortcode that is required for embedding a particular gallery.
+		   Just copy the shortcode for a gallery, that is displayed there and then head over to Posts section in Wordpress. Open any post or page where you want
+		   to have a gallery, in the Wordpress editor, and then paste the shortcode at a place where you find suitable, and then save or publish that post or
+		   page. Then open that post/page in your browser and you will see the gallery in action with all the settings that you created it with. If you want to directly
+		   write the embed code in a Wordpress template file then you will have to use the <a href="http://codex.wordpress.org/Function_Reference/do_shortcode">do_shortcode</a>
+		   function. Using this function has the advantage that you can embed a gallery in a part of the Wordpress template where content is not pulled using the Wordpress Loop.
+		   An example usage of this function to embed a gallery is:
+		</p>
+
+<pre>
+    &lt;?php echo do_shortcode('[ccgallery id="1"]'); ?&gt;
+</pre>
+
+
+		<h4>Special Notes for IE</h4>
+
+		<p>IE8 and below needs two javascript files to be declared in the header of your WP theme, in the <code>&lthead&gt;</code>, in order to make it
+		   recognize new HTML5 tags and also to be more standards compliant to make the entire gallery work correctly.
+		   You should declare the two files in the header in the following way:
+		</p>
+
+<pre>
+&lt;!--[if lt IE 9]&gt;
+	&lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+	&lt;script src=&quot;http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+</pre>
+
+		<p>IE also needs the <a href="http://css3pie.com">CSS3 PIE</a> file in order for modern CSS3 styles that this gallery uses, to be rendered there. You must place the PIE.htc file that is
+		   present in the <strong>css</strong> folder of the plugin, in the root of your site so that it is loaded in IE. Also IE9 is very strict regarding mime-types,
+		   so if you find that the htc file is not being loaded in IE9 then you must set the correct mime-type as
+		</p>
+		
+<pre>
+AddType text/x-component .htc
+</pre>
+
+
+		<hr>
+
+
+
+
+		<p>I hope that you like this item and it makes your web page more stunning. If you find any bugs then don't hesitate to let me know. Also if you want to see some
+		   new features in this item or have any ideas to make the overall item much better then you can send me the details. All future updates are of course free !
+		</p>
+
+		<p>Once again, thank you so much for purchasing this item. As I said at the beginning, I'd be glad to help you if you have any questions
+		relating to this item. No guarantees, but I'll do my best to assist. If you have a more general question relating to the items on Codecanyon,
+		you might consider visiting the forums and asking your question in the "Item Discussion" section.
+		</p>
+
+		<p class="append-bottom alt large"><strong>Nilok Bose</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

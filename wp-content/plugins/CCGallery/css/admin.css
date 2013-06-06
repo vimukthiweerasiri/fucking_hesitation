@@ -1,0 +1,164 @@
+h3 {
+    margin-top: 40px;
+}
+
+#formButtons {
+    margin: 40px 0;
+}
+
+#formButtons input {
+    margin-right: 20px;
+}
+
+.uploader {
+	display: inline-block;
+	width: 246px;
+	overflow: hidden;
+}
+
+.uploader .qq-upload-button {
+	padding: 3px 8px;
+	width: auto;
+	line-height: 13px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.uploader .qq-upload-list {
+	margin: 3px 0 3px 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.uploader .qq-upload-list li {
+	font-size: 11px;
+}
+
+.uploader .qq-upload-file {
+	display: inline-block;
+	max-width: 85px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+
+#itemsList {
+    margin: 40px 0;
+    position: relative;
+    list-style: none;
+}
+
+#itemsList > li {
+    position: relative;
+	overflow: hidden;
+	width: 720px;
+	overflow: hidden;
+    padding: 20px 20px 10px 20px;
+	margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #ffffff, #ededed); /* Chrome 10+, Saf5.1+, iOS 5+ */
+	background-image:    -moz-linear-gradient(top, #ffffff, #ededed); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #ffffff, #ededed); /* IE10 */
+	background-image:      -o-linear-gradient(top, #ffffff, #ededed); /* Opera 11.10+ */
+	background-image:         linear-gradient(to bottom, #ffffff, #ededed);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+	-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); /* FF3.5 - 3.6 */
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
+}
+
+#itemsList li * {
+	vertical-align: top;
+}
+
+#itemsList .regular-text {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#itemsList label.main {
+    width: 150px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#itemsList .description {
+	font-size: 11px;
+	display: inline-block;
+	margin: 5px 0 15px 154px;
+}
+
+#itemsList li .description.last {
+	margin-bottom: 0;
+}
+
+#itemsList input {
+	display: inline-block;
+}
+
+#itemsList input[type="radio"] {
+	margin-right: 10px;
+}
+
+#itemsList .uploadFields {
+	display: inline-block;
+}
+
+.uploadFields .upload-val:nth-of-type(n+2), .mobileVideo .upload-val {
+	margin-left: 154px;
+}
+
+#itemsList textarea{
+	width: 392px;
+	height: 94px;
+	padding: 3px;
+}
+
+#itemsList a.delete {
+    width: 22px;
+    height: 22px;
+    background: url(../images/delete.png) no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 64px;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+#itemsList a.collapse {
+	width: 22px;
+    height: 22px;
+    background: url(../images/collapse.png) no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 37px;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+#itemsList a.expand {
+	width: 22px;
+    height: 22px;
+    background: url(../images/expand.png) no-repeat;
+    position: absolute;
+    top: 10px;
+	right: 10px;
+    cursor: pointer;
+    z-index: 2;
+    display: none;
+}
+
+#itemsList a.delete.hide, #itemsList a.expand.hide, #itemsList a.collapse.hide {
+	display: none !important;
+}
+
+#itemsList li:hover a.delete, #itemsList li:hover a.expand, #itemsList li:hover a.collapse {
+	display: block;
+}

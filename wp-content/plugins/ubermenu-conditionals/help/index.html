@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>UberMenu Conditionals &ndash; Support Guide</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  	================================================== -->
+	<link rel="stylesheet" href="assets/style.css">
+	<link type="text/css" rel="stylesheet" href="assets/syntaxhighlighter/styles/shCoreDefault.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/syntaxhighlighter/styles/shThemeFadeToGrey.css"/>
+	
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="assets/favicon.ico">
+
+	<!-- Fonts
+	================================================== -->
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+	
+	<!-- JS
+	================================================== -->
+	<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>	
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="assets/help.js"></script>
+	
+	
+		
+</head>
+
+<body>
+	
+	<div class="wrap">
+		
+		<div id="nav-panel">
+			<div id="nav-panel-inner">
+				
+				<header>
+					<h1><a href="http://wpmegamenu.com/conditionals/help">UberMenu Conditionals</a></h1>
+					<h4>Support Guide</h4>
+				</header>
+				
+				<nav id="nav">
+					<ul>
+						<li><a href="#introduction" class="current">Start Here</a></li>
+						<!-- <li><a href="#video">Video Tutorials!</a></li> -->
+						<li><a href="#support">Getting Support</a></li>
+
+						
+						<li><a href="#requirements">Requirements</a></li>
+						<li><a href="#installation">Installation</a></li>
+						<li><a href="#usage">Usage</a>
+							<ul>
+								<li><a href="#usage-display">Conditional Display</a></li>
+								<li><a href="#usage-param">Conditional Parameters</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#dynamic_urls">Dynamic URLs</a>
+							<ul>
+								<li><a href="#dynamic_urls-logout">Logout</a></li>
+							</ul>
+						</li>
+
+						<li><a href="#custom_conditions">Custom Conditions</a></li>
+						
+						
+						
+						<li><a href="#faqs">FAQs</a>
+							<!--
+							<ul>
+								<li><a href="#"></a></li>
+							</ul>
+							-->
+							
+						</li>
+						
+					</ul>
+				</nav>
+				
+				<div class="search-tip">Tip: Press CRTL+F to search this file</div>
+				
+				<div class="nav-footer">
+					<a href="http://sevenspark.com" class="ss-attribution" target="_blank">by SevenSpark</a>
+				</div>
+				
+			</div>
+		</div>
+		<!-- END NAVIGATION -->
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- CONTENT -->
+		
+		<div id="content-panel">
+			
+			<div id="content-panel-inner">
+			
+				
+			
+				<!-- INTRODUCTION -->
+				<section id="introduction">
+					<h2 style="margin-top:0em;">Introduction to UberMenu Conditionals</h2>
+					
+					
+					<table class="info-table">
+						<tr>
+							<td>Plugin: </td>
+							<td>UberMenu Conditionals</td>
+						</tr>
+						<tr>
+							<td>Plugin by:</td>
+							<td>Chris Mavricos, <a href="http://sevenspark.com">SevenSpark</a></td>
+						</tr>
+						<tr>
+							<td>Website: </td>
+							<td><a href="http://sevenspark.com">sevenspark.com</a></td>
+						</tr>
+						<tr>
+							<td>Created:</td>
+							<td>September 10, 2012</td>
+						</tr>
+						<tr>
+							<td>Guide Last Updated:</td>
+							<td>September 10, 2012</td>
+						</tr>
+						
+						
+					</table>
+					
+					
+					<p>Welcome to UberMenu Conditionals!  Thank you for purchasing this plugin, I appreciate it!</p>
+					
+					<p>This guide should answer all your questions about how to use this plugin.  You can 
+						browse the document using the navigation sidebar on the left, or search the entire document
+						by using CTRL+F in your browser.</p>
+						
+					<p>The latest version of this support guide can always be found here: 
+						<a href="http://wpmegamenu.com/help/conditionals/">UberMenu Conditionals Support Guide</a>.</p>
+		
+				</section>
+
+
+				<!-- SUPPORT -->
+				<!--
+				<section id="video">
+					<h2>Video Tutorials</h2>
+
+					<p>Here's a <a href="http://www.youtube.com/playlist?list=PLFBA9BA04E7345E21">playlist of UberMenu Video tutorials</a>.</p>
+					<p class="alert alert-warning">
+						You should still read the guide!  The videos are supplementary, not replacements :)
+					</p>
+
+					<iframe width="660" height="371" src="http://www.youtube.com/embed/videoseries?list=PLFBA9BA04E7345E21&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+
+
+				</section>
+				-->
+				
+				
+				<!-- SUPPORT -->
+				<section id="support">
+					
+					<h2>Getting Support</h2>
+					
+					<div class="alert alert-notification">
+						First, <strong>please take a moment to search this file</strong>, as the answer to your question is likely
+						already in here.  You can press <strong>CTRL+F</strong> in your browser and then search this entire page 
+						for keywords.  Or, browse the topics in the navigation on the left.  It's the fastest way to get
+						the answer you need!</div>
+					<br/>
+					<p>Please be polite when requesting support, and I'll be sure to respond as soon as possible.  
+						I'll do my best to answer your questions, but unfortunately I generally can't offer 
+						customizations beyond a few lines of code - there just aren't enought hours in the day!  
+						Of course, I will always provide fixes for any bugs that crop up as soon as can be :)</p>
+					
+					<div class="alert alert-notification">When requesting support, please indicate which product you are referring to,
+						explain what you've already tried and provide a link to your site so I may see
+						the issue firsthand.  It's really the only way to efficiently diagnose a problem.  Thanks!</div>
+					
+					<a class="button" href="http://sevenspark.com/out/support" target="_blank">I can't find my answer in this guide.  Get Support &rarr;</a>
+					
+					
+					
+				</section>
+				
+				
+				
+				
+				
+				<section id="requirements">
+					
+					<h2 id="MEGA-requirements">Requirements</h2>
+					
+					<ol>
+						<li><strong>WordPress 3.4+</strong></li>
+						<li><strong>UberMenu 2.1+</strong></li>
+					</ol>
+										
+				</section>
+				
+				
+				
+				<!-- INSTALLATION -->
+				<section id="installation">
+					
+					<h2 id="#MEGA-installation">Installation</h2>					
+					
+					<h3 id="install-plugin">Install the Plugin</h3>
+					
+					<h4>WordPress Plugin Uploader</h4>
+					
+					<p>You can install UberMenu Conditionals via the WordPress plugin uploader without unzipping the file.</p>
+					
+					<ol>
+						<li>Log into your WordPress admin panel</li>
+						<li>Navigate to <em>Plugins &gt; Add New</em></li>
+						<li>Click <em>Upload</em></li>
+						<li>Click <em>Choose File</em> and select the UberMenu Conditionals download zip.</li>
+						<li>Click <em>Install Now</em>.</li>
+					</ol>
+					
+					
+					<h4>FTP</h4>
+					
+					<p>You can also install UberMenu Conditionals via FTP</p>
+					
+					<ol>
+						<li>Extract the .zip file you downloaded from CodeCanyon.</li>
+						<li>Find the <code>ubermenu-conditionals</code> folder (this directory is created when you unzip the file).</li>
+						<li>Upload the <code>ubermenu-conditionals</code> folder to your <code>wp-content/plugins</code> directory.</li>
+						<li>Navigate to your Control Panel: Plugins</li>
+						<li>Under <strong>UberMenu Conditionals</strong>, click <em>Activate</em></li>
+					</ol>
+					
+					<h4>What did this do?</h4>
+					<p>Installing the plugin doesn't automatically change any navigation menus - so it immediately affect anything on your site, either.  Once you install the plugin, you'll get:</p>
+					<ul>
+						<li>New conditional options for Menu Items in the <em>Appearance &gt; Menus</em> Control Panel</li>
+					</ul>
+
+					<div class="alert alert-warning">
+						<strong>IMPORTANT NOTE</strong>
+						<p>If you deactivate the UberMenu Conditional Plugins and then save your menu, you will lose all of your previously set conditions.  In other words, if you save your menu while the plugin is disabled, you will reset all of your conditions to the default.</p>
+					</div>
+					
+				</section>				
+				
+				
+				
+				<!-- Usage -->
+				<section id="usage">
+					
+					<h2>Usage</h2>
+					
+					<p>Activating UberMenu Conditionals will add two new options to each of your menu items in Appearance > Menus, <strong>Conditional Display: Show item</strong> and <strong>Conditional Parameters</strong>.</p>
+
+					<img src="http://i.imgur.com/1OMhF.png" alt="new options" />
+
+					<h3 id="usage-display">Conditional Display: Show item</h3>
+
+					<p>Setting the option here will enforce that the menu item is displayed ONLY when the chosen condition is met.  For example, if "On front page" is selected, the item will be displayed on the front page, and not on any others.</p>
+
+					<table class="template-list">
+						<tr>
+							<th style="width:150px;">Condition</th>
+							<th>Function</th>
+							<th>Explanation</th>
+						</tr>
+						<tr>
+							<td>(blank)</td>
+							<td><em>none</em></td>
+							<td>This setting will not affect the menu item at all</td>
+						</tr>
+						<tr>
+							<td>Always</td>
+							<td><em>N/A</em></td>
+							<td>The menu item will always be displayed.  The difference compared to the blank setting is that this will override any filters with lesser importance.</td>
+						</tr>
+						<tr>
+							<td>If user is logged in</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_user_logged_in">is_user_logged_in()</a></td>
+							<td>Item will be displayed only if the curreunt user is logged in to your site.</td>
+						</tr>
+						<tr>
+							<td>If user is not logged in</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_user_logged_in">!is_user_logged_in()</a></td>
+							<td>Item will be displayed only if the curreunt user is NOT logged in to your site.</td>
+						</tr>
+						<tr>
+							<td>If user can [capability]</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/current_user_can">current_user_can( $capability )</a></td>
+							<td>Item will be displayed only if the current user has the capability which is set in the <em>Conditional Parameters</em> (required)</td>
+						</tr>
+						<tr>
+							<td>If user cannot [capability]</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/current_user_can">!current_user_can( $capability )</a></td>
+							<td>Item will be displayed only if the current user DOES NOT HAVE the capability which is set in the <em>Conditional Parameters</em> (required)</td>
+						</tr>
+						<tr>
+							<td>On front page</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_front_page">is_front_page()</a></td>
+							<td>Item will be displayed only when the main blog page is being displayed and the <em>Settings > Reading > Front page displays</em> is set to "Your latest posts", or when is set to "A static page" and the "Front Page" value is the current Page being displayed.  <em>In other words, displayed only on the main URL of your site</em></td>
+						</tr>
+						<tr>
+							<td>Not on front page</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_front_page">!is_front_page()</a></td>
+							<td>Displayed on all pages but the front page (main URL) of your site</em></td>
+						</tr>
+						<tr>
+							<td>On home page (main blog)</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_home">is_home()</a></td>
+							<td>Item will be displayed when the main blog page is being displayed. This is the page which shows the time based blog content of your site, so if you've set a static Page for the Front Page (see below), then this will only be true on the Page which you set as the "Posts page" in Administration > Settings > Reading.</td>
+						</tr>
+						<tr>
+							<td>Not on home page (main blog)</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_home">!is_home()</a></td>
+							<td>Item will be displayed when any page EXCEPT the main blog page is being displayed.</td>
+						</tr>
+						<tr>
+							<td>On a page</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_page">is_page()</a></td>
+							<td>Item will be displayed when on a Page</td>
+						</tr>
+						<tr>
+							<td>Not on a page</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_page">!is_page()</a></td>
+							<td>Item will be displayed when NOT on a Page</td>
+						</tr>
+
+						<tr>
+							<td>On a single post</td>					
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_single">is_single()</a></td>
+							<td>Item will be displayed when a single Post is being displayed.</td>
+						</tr>
+						<tr>
+							<td>Not on a single post</td>					
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_single">!is_single()</a></td>
+							<td>Item will be displayed when a single Post is NOT being displayed.</td>
+						</tr>
+						<tr>
+							<td>On a page template</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_page_template">is_page_template()</a></td>
+							<td>Item will be displayed when on a page template.</td>
+						</tr>
+						<tr>
+							<td>On a page template</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_page_template">is_page_template()</a></td>
+							<td>Item will be displayed when NOT on a page template.</td>
+						</tr>
+						<!-- last not -->
+						<tr>
+							<td>On a Category Archive</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_category">is_category()</a></td>
+							<td>Item will be displayed on Category Archive pages</td>
+						</tr>
+						<tr>
+							<td>On a Tag Archive</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_tag">is_tag()</a></td>
+							<td>Item will be displayed on Tag Archive pages</td>
+						</tr>
+						<tr>
+							<td>On a Taxonomy Archive</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_tax">is_tax()</a></td>
+							<td>Item will be displayed on Taxonomy Archive pages</td>
+						</tr>
+						<tr>
+							<td>On an Author Archive Page</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_author">is_author()</a></td>
+							<td>Item will be displayed on Author Archive pages</td>
+						</tr>
+						<tr>
+							<td>On any archive page</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_archive">is_archive</a></td>
+							<td>Item will be displayed on any archive page</td>
+						</tr>
+						<tr>
+							<td>On Search Results Page</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_search">is_search</a></td>
+							<td>Item will be displayed on search results page</td>
+						</tr>
+						<tr>
+							<td>On 404 Page</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_404">is_404</a></td>
+							<td>Item will be displayed on 404 page</td>
+						</tr>
+						<tr>
+							<td>On a single Page, Post, or Attachment</td>
+							<td><a href="http://codex.wordpress.org/Function_Reference/is_author">is_singular</a></td>
+							<td>Item will be displayed when a single Page, Post, or Attachment is being displayed.</td>
+						</tr>
+
+						<tr>
+							<td>On a Post Type [type]</td>
+							<td><a href="http://codex.wordpress.org/Conditional_Tags#A_Post_Type">get_post_type()</a></td>
+							<td>Item will be displayed when the current page is a particular post type.  The Conditional Parameter must be set to the post type slug.  e.g. <em>post</em>, <em>portfolio-item</em>, etc.  <em>Added in version 1.1</em></td>
+						</tr>
+
+					</table>
+
+
+
+					<h3 id="usage-param">Conditional Parameters</h3>
+
+					<p>Some of the conditional functions used can take a parameter.  UberMenu Conditionals uses the <strong>Conditional Parameters</strong> setting to pass additional information to the functions.</p>
+
+					<h4>Single String or Integer Parameters</h4>
+
+					<p>For example, to display an item only on a particular page, set the <strong>Conditional Display</strong> to <em>On a page</em> and set the <strong>Conditional Parameter</strong> to the ID of that page.</p>
+
+					<img src="http://i.imgur.com/uoK7U.png" alt="conditional parameter" />
+
+					<p>In the example above, the menu item will only be displayed on the page with the ID <strong>255</strong></p>
+
+					<h4>Multiple String or Integer Parameters</h4>
+
+					<p>Some of the conditional functions allow you to pass an array of strings or integers as a parameter.  To do so, use a comma-delimited list in the parameters setting.  UberMenu Conditionals will automatically convert any value with a comma into an array to pass to the conditional function.</p>
+
+					<p>For example, to display an item only on a specific group of pages, set the <strong>Conditional Parameters</strong> to a comma-delimited string of the page IDs: 255, 119</p>
+
+					<img src="http://i.imgur.com/M3XrP.png" alt="multiple conditional parameters"/>
+
+					<p>In the example above, the menu item will be displayed only on two pages: page 255 and page 119.</p>
+
+					<p class="alert alert-notification">Tip: The content Conditional Parameters input box will always be passed as the first parameter of the conditional function.  If the value contains commas, it will be passed as an array. To pass a second parameter to the few conditional functions that support it, you'd need to write a custom conditional filter.</p>
+
+					
+						
+				</section>
+
+
+
+				<!-- Dynamic URLs -->
+				<section id="dynamic_urls">
+					<h2>Dynamic URLs</h2>
+							
+
+					<h3 id="dynamic_urls-logout">Logout</h3>
+
+					<p>Adding a logout button to your menu requires a dynamic URL, as a nonce is required.  UberMenu Conditionals allows you do do this by creating a Custom Menu Item and setting the URL to <strong>#umcdu-logout</strong>. </p>
+
+					<img src="http://i.imgur.com/47e6z.png" alt="Logout URL" />
+
+					<p class="alert alert-notification">Please note that the dynamic URL will only be processed for UberMenu items where a condition has been set</p>
+							
+
+				</section>
+
+
+
+				
+				<!-- Custom Conditions -->
+				<section id="custom_conditions">
+					<h2>Custom Conditional Filters</h2>
+
+					<p>If you need a conditional statement more advanced than the provided parameters, UberMenu Conditionals allows you to write a custom conditional filter.</p>
+
+					<p class="alert alert-notification">The best place to put custom conditional filters would be in your child theme's functions.php, or in a separate plugin.  This is totally up to you and depends on how you manage your site.</p>
+
+					<p>Here's an example of a custom conditional filter that makes sure a particular menu item will not display on the front page for logged in users.</p>
+
+<pre class="brush: php;">
+function my_custom_conditional_filter( $display_on , $walker , $element , $max_depth, $depth, $args ){
+
+	//The ID of the menu item currently being filtered
+	$id = $element->ID;
+
+	//Check for that specific menu item
+	if( $id == 268 ){
+
+		//If we're currently logged in AND on the front page
+		if( is_user_logged_in() && is_front_page() ){
+
+			//Disable the menu item
+			$display_on = false;
+
+		}
+
+	}
+
+	//Return the filtered display boolean
+	return $display_on;
+}
+add_filter( 'uberMenu_display_item', 'my_custom_conditional_filter', 20, 6 );
+</pre>
+
+				<strong>Important notes:</strong>
+				<ol>
+					<li>268 is the ID of the menu item we are filtering - it will be specific to your menu item.  It can be determined by looking at the ID of the menu item within your menu.</li>
+					<li>It is very important to <em>return $display_on;</em> when your conditions are not met</li>
+					<li>To display the menu item, return true;  To hide the menu item, return false; to not change the current value of the menu item's display visibility, return the incoming $display_on value.</li>
+					<li>The second parameter of the add_filter() function call and your function name (my_custom_conditional_filter) must match.</li>
+					<li>You should keep the function definition as in the example; the only things that should change are the function name if you wish, and the contents of the function.</li>
+				</ol>
+
+
+
+
+				</section>
+				
+				<!-- FAQs -->
+				<section id="faqs">
+					
+					<h2>Frequently Asked Questions</h2>
+					
+					<h3>Can conditions be combined?</h3>
+
+					<p>To create a more complex condition, you can create a <a href="#custom_conditions">custom condition</a>.  It is not possible to select more than one condition in the menu item settings.</p>
+						
+				</section>
+				
+				
+				
+										
+					<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>				
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+</body>
+
+</html>
